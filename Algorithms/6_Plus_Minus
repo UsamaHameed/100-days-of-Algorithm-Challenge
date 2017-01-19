@@ -32,8 +32,7 @@ function main() {
             positives++;
         } else if(num < 0) {
             negatives++;
-        }
-        else {
+        } else {
             zeroes++;
         }
     });
