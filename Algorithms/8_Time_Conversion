@@ -26,6 +26,19 @@ function main() {
     var type = time.substring(length - 2, length);
     var timeArray = time.substring(0, length - 2).split(":");
     var hour = parseInt(timeArray[0]);
-    var correctedHour = (type === "PM") ? hour + 12 : hour;
-    console.log(correctedHour.toString() + ":" + timeArray[1] +  ":" + timeArray[2]);
+    var correctedHour = ((type === "PM") ? hour + 12 : hour).toString();
+    if(hour  === 12) {
+        if(type === "AM") 
+            correctedHour = "00";
+        else if (type === "PM") {
+            correctedHour = "12";
+        }    
+    } else {
+        correctedHour = ((type === "PM") ? hour + 12 : hour).toString();
+    }
+    
+    if(correctedHour.length === 1) {
+        correctedHour = "0" + correctedHour;
+    }
+    console.log(correctedHour + ":" + timeArray[1] +  ":" + timeArray[2]);
 }
