@@ -19,3 +19,8 @@ I joined the #100DaysOfAlgorithm Challenge.
 7) **7_Staircase:** 
 
 8) **8_Time_Conversion:** 
+
+### Day 1: January 21, 2017 
+1) **1_Mini_Max_Sum:**  
+
+2) **2_Designer_PDF_Viewer:**  
